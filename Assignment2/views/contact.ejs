@@ -1,0 +1,21 @@
+<%- include ./partials/header.ejs %>
+<%- include ./partials/main_nav.ejs %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> page</p>
+     <!--Form with three boxes for name, email, and the message they would like to send. The method="post" part means the information in each box will be sent to the server-->
+            <form action="#" method="post">
+                <!--Title for the corresponding input box with the matching id name. In this case the id is "name"-->
+                <label for="name">Name:</label>
+                <!--Input box for names-->
+                <input type="text" id="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                <label for="message">Comments:</label>
+                <!--Larger text space that can be expanded by the user if necessary. This is used so the website user can type in messages-->
+                <textarea name="message" rows="5" cols="20">Type Here
+                </textarea>
+                <!--Submit button -->
+                <input type="submit" value ="Submit">
+            </form>
+        </div>
+<%- include ./partials/footer.ejs %>
