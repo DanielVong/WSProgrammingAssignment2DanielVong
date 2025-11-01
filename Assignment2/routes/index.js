@@ -3,7 +3,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'HomePage' });
 });
-
+router.get('/home', function(req, res, next) {
+  res.render('index', { title: 'HomePage' });
+});
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About Me' });
+});
+router.get('/project', function(req, res, next) {
+  res.render('project', { title: 'Project' });
+});
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact' });
+});
 module.exports = router;
